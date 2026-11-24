@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head><title>Register for Cluminati | Cyanet</title><meta name="description" content="Register your team for Cluminati v1.0."><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0C0032"><link rel="icon" href="img/favicon.png" type="image/png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&family=Unbounded:wght@700&display=swap"><link rel="canonical" href="https://cyanet.org/register.html"><link rel="stylesheet" href="css/style.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap"><a class="brand" href="index.html"><img src="img/logo.png" alt="" width="44" height="44">Cyanet</a>
+<nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="founders.html">Founders</a><a href="cluminati.html">Cluminati</a><a href="contact.html">Contact us</a><a class="btn nav-btn" href="register.html">Register</a></nav></div></header>
+<main id="main" class="page"><div class="wrap">
+<h1>Register for Cluminati</h1>
+<p class="muted">Teams can have 1 to 3 players. One person fills this in as the team leader. It takes about three minutes.</p>
+
+<div id="summary" class="summary" role="alert" tabindex="-1" hidden><h2>Please fix these first</h2><ul id="summary-list"></ul></div>
+
+<form id="reg" name="cluminati-registration" method="POST" action="thank-you.html" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+<input type="hidden" name="form-name" value="cluminati-registration">
+<p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+<fieldset style="border-top:0;margin-top:0;padding-top:0"><legend>Your team</legend>
+<div class="field"><label for="team-name">Team name</label><input type="text" id="team-name" name="team-name" required maxlength="60" autocomplete="off" data-msg="Enter a team name."><p class="err" id="team-name-err"></p></div>
+<div class="field"><label for="school">School</label><input type="text" id="school" name="school" required maxlength="100" autocomplete="organization" data-msg="Enter your school's name."><p class="err" id="school-err"></p></div>
+<div class="field"><label for="team-size">Team size</label><select id="team-size" name="team-size" required data-msg="Choose how many players are in your team."><option value="">Choose 1 to 3</option><option>1</option><option>2</option><option>3</option></select><p class="err" id="team-size-err"></p></div>
+</fieldset>
+
+<fieldset><legend>Team leader</legend>
+<div class="field"><label for="leader-name">Full name</label><input type="text" id="leader-name" name="leader-name" required maxlength="80" autocomplete="name" data-msg="Enter the leader's full name."><p class="err" id="leader-name-err"></p></div>
+<div class="field"><label for="leader-class">Class</label><p class="help" id="leader-class-h">For example, 10B.</p><input type="text" id="leader-class" name="leader-class" required maxlength="20" aria-describedby="leader-class-h" data-msg="Enter the leader's class."><p class="err" id="leader-class-err"></p></div>
+<div class="field"><label for="leader-email">Email</label><input type="email" id="leader-email" name="leader-email" required autocomplete="email" data-msg="Enter an email address like name@example.com."><p class="err" id="leader-email-err"></p></div>
+<div class="field"><label for="leader-whatsapp">WhatsApp number</label><p class="help" id="wa-h">Include the country code, like +91 98765 43210.</p><input type="tel" id="leader-whatsapp" name="leader-whatsapp" required inputmode="tel" autocomplete="tel" aria-describedby="wa-h" data-msg="Enter a WhatsApp number with 8 to 15 digits, including the country code."><p class="err" id="leader-whatsapp-err"></p></div>
+<div class="field"><label for="leader-discord">Discord username</label><p class="help" id="dc-h">Your username, not your display name.</p><input type="text" id="leader-discord" name="leader-discord" required maxlength="32" autocomplete="off" aria-describedby="dc-h" data-msg="Enter your Discord username (2 to 32 characters)."><p class="err" id="leader-discord-err"></p></div>
+</fieldset>
+
+<fieldset id="players"><legend>Other players <span class="opt">(optional)</span></legend>
+<p class="help">Add names now or later. Fields show to match your team size.</p>
+<div class="pl" data-n="2"><div class="field"><label for="p2-name">Player 2 name <span class="opt">(optional)</span></label><input type="text" id="p2-name" name="player2-name" maxlength="80"></div><div class="field"><label for="p2-class">Player 2 class <span class="opt">(optional)</span></label><input type="text" id="p2-class" name="player2-class" maxlength="20"></div></div>
+<div class="pl" data-n="3"><div class="field"><label for="p3-name">Player 3 name <span class="opt">(optional)</span></label><input type="text" id="p3-name" name="player3-name" maxlength="80"></div><div class="field"><label for="p3-class">Player 3 class <span class="opt">(optional)</span></label><input type="text" id="p3-class" name="player3-class" maxlength="20"></div></div>
+</fieldset>
+
+<fieldset><legend>Rules</legend>
+<div class="field"><div class="check"><input type="checkbox" id="rules" name="agree-rules" value="yes" required data-msg="Tick the box to say you agree to the rules."><label for="rules">We have read the <a href="rules.html">Cluminati rules</a> and agree to follow them.</label></div><p class="err" id="rules-err"></p></div>
+<p class="note">We only use these details to run Cluminati. Questions? Email <a href="mailto:cyanet.official@gmail.com">cyanet.official@gmail.com</a>.</p>
+<div data-netlify-recaptcha="true" style="margin:1.5rem 0"></div>
+<button class="btn" type="submit">Register team</button>
+<p class="note" style="margin-top:1.25rem">Form not working for you? <a href="https://forms.gle/ZsAYGsfenrPXU1bo9">Register with our Google Form instead.</a></p>
+</fieldset>
+</form>
+</div></main>
+<footer><div class="wrap"><p>Cyanet (Cyber Analysts Network) is a youth-led student tech community. Contact: cyanet.official@gmail.com</p></div></footer>
+<script src="js/google-form.js"></script><script src="js/register.js"></script></body></html>

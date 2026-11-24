@@ -1,0 +1,60 @@
+<!doctype html><html lang="en"><head><title>Cyanet: Cyber Analysts Network</title><meta name="description" content="A youth-led student tech community for people who like code, security, puzzles and design."><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0C0032"><link rel="icon" href="img/favicon.png" type="image/png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&family=Unbounded:wght@700&display=swap"><link rel="canonical" href="https://cyanet.org/"><link rel="stylesheet" href="css/style.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap"><a class="brand" href="index.html"><img src="img/logo.png" alt="" width="44" height="44">Cyanet</a>
+<nav class="nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="founders.html">Founders</a><a href="cluminati.html">Cluminati</a><a href="contact.html">Contact us</a><a class="btn nav-btn" href="register.html">Register</a></nav></div></header>
+<main id="main">
+
+<section class="hero" aria-labelledby="cipher-text"><div class="wrap">
+<p class="hero-lead">Our front door is a puzzle. Turn the dial to read it.</p>
+<h1 id="cipher-text" data-cipher="QVPU AOL ULADVYR" data-plain="JOIN THE NETWORK" data-shift="7">QVPU AOL ULADVYR</h1>
+<noscript><p>Join the network. Turn on JavaScript to solve the puzzle, or go straight to <a href="https://discord.gg/86xDNhgKJ">our Discord</a>.</p></noscript>
+<div class="puzzle">
+ <div>
+  <p class="muted">This is a Caesar cipher. Every letter has been pushed along the alphabet by the same amount. Turn the inner wheel until the words make sense.</p>
+  <details class="hint"><summary>Need a hint?</summary><p>The shift is the number of days in a week.</p></details>
+  <p id="status" class="sr-only" role="status"></p>
+  <div id="cta" class="cta" hidden><a class="btn" href="https://discord.gg/86xDNhgKJ">Join our Discord</a></div>
+ </div>
+ <div class="dial-col">
+  <div id="dial" class="dial" role="slider" tabindex="0" aria-label="Cipher shift" aria-valuemin="0" aria-valuemax="25" aria-valuenow="0" aria-valuetext="Shift 0 of 25"></div>
+  <div class="dial-ctrl"><button type="button" id="minus" aria-label="Turn dial back one letter">&minus;</button><span class="readout" aria-hidden="true">shift <span id="shiftval">0</span></span><button type="button" id="plus" aria-label="Turn dial forward one letter">+</button></div>
+ </div>
+</div>
+</div></section>
+
+<section class="about" id="about" aria-labelledby="about-h"><div class="wrap">
+<h2 id="about-h">Cyber Analysts Network</h2>
+<p class="name" aria-label="Cy, An, Net"><mark>Cy</mark>ber <mark>An</mark>alysts <mark>Net</mark>work</p>
+<p>Cy, An, Net: that is where Cyanet comes from. We are students who like to take things apart, solve them and build something new. Run by teenagers, for teenagers.</p>
+<ul class="areas">
+<li><h3>Events</h3><p>Hunts, talks and hack nights through the year.</p></li>
+<li><h3>Learning</h3><p>Plain-English sessions on how things work, and how they break.</p></li>
+<li><h3>Building</h3><p>Puzzles, tools and designs made by our own members.</p></li>
+</ul>
+</div></section>
+
+<section class="clum" id="cluminati" aria-labelledby="clum-h"><div class="wrap grid">
+<div>
+<h2 id="clum-h">Cluminati v1.0</h2>
+<p>A cryptic hunt crossed with a capture-the-flag. Teams of up to three. Everything you need to know is on the Cluminati page.</p>
+<div class="actions"><a class="btn" href="register.html">Register for Cluminati</a><a href="cluminati.html">All the details</a></div>
+</div>
+<svg class="emblem" viewBox="0 0 100 100" fill="none" stroke="#0C0032" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="A triangle with an eye inside"><path d="M50 8 94 88H6Z"/><path d="M26 64Q50 42 74 64Q50 84 26 64Z"/><circle cx="50" cy="64" r="8" fill="#0C0032"/></svg>
+</div></section>
+
+<section class="hiring" id="hiring" aria-labelledby="hire-h"><div class="wrap">
+<h2 id="hire-h">We're looking for people who want a smarter future</h2>
+<p>Cyanet is run by students and it grows with whoever joins. If you like puzzles, code, design or writing, or you just like asking how things work, we want you on the team.</p>
+<a class="btn" href="mailto:cyanet.official@gmail.com?subject=Joining%20Cyanet">Apply</a>
+</div></section>
+
+<section id="find-us" aria-labelledby="find-h"><div class="wrap">
+<h2 id="find-h">Find us</h2>
+<ul class="rows">
+<li><a href="https://discord.gg/86xDNhgKJ"><span>Discord<small>Where everything happens</small></span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a></li>
+<li><a href="https://instagram.com/cyanet.official"><span>Instagram<small>@cyanet.official</small></span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a></li>
+
+</ul></div></section>
+</main>
+<footer><div class="wrap"><p>Cyanet (Cyber Analysts Network) is a youth-led student tech community. Contact: cyanet.official@gmail.com</p></div></footer>
+<script src="js/cipher.js"></script></body></html>
